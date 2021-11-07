@@ -1,0 +1,17 @@
+@import "src/app/shared/scss/core-variables";
+
+.lh-1 {
+  line-height: 1;
+}
+
+h1, .text-orange {
+  color: $color-orange-l1;
+}
+
+.bg-gray-l7 {
+  background: $color-gray-l7;
+}
+
+.bg-orange-l1 {
+  background: $color-orange-l1;
+}

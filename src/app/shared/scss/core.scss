@@ -1,0 +1,25 @@
+@import "core-variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+* {
+  font-family: 'Lexend', sans-serif;
+}
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+.btn {
+  border-radius: 2px;
+}

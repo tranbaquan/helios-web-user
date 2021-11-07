@@ -1,0 +1,76 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm pt-lg-3 pb-lg-3">
+  <div class="container-fluid clearfix">
+    <div class="d-flex align-items-end float-start">
+      <h1 class="d-block mb-0 lh-1 me-1">Helios</h1>
+      <span class="text-uppercase text-nowrap">Cung Cấp Giải Pháp & Vật Liệu Xây Dựng</span>
+    </div>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="d-flex justify-content-end ms-auto">
+        <span class="nav-link text-nowrap text-orange fw-bold">Hotline: 1900 -1080</span>
+        <span class="nav-link text-nowrap text-orange fw-bold">Email: helios-order.helios.vn</span>
+      </div>
+      <ul class="navbar-nav nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-uppercase text-nowrap fw-bold" aria-current="page">Chăm sóc khách hàng</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-nowrap fw-bold">Kiểm tra đơn hàng</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-nowrap fw-bold">Đăng ký</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-nowrap fw-bold">Đăng nhập</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg bg-gray-l7 pt-0 pb-0">
+  <div class="container-fluid d-flex gap-3">
+    <div class="category-menu text-nowrap p-4 bg-orange-l1 w-25">
+      <fa-icon class="me-3 text-white" [icon]="faBars"></fa-icon>
+      <span class="text-white">Danh mục sản phẩm</span>
+    </div>
+    <div class="flex-grow-1 ps-3 pe-3">
+      <div class="input-group border">
+        <div class="dropdown border-end">
+          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+            Danh mục
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Danh mục</a></li>
+            <li><a class="dropdown-item" href="#">Sản phẩm</a></li>
+          </ul>
+        </div>
+        <input type="text" class="form-control border-0 border-start-1 ms-0" placeholder="Tìm kiếm"
+               aria-label="Tìm kiếm">
+        <button class="btn btn-secondary pt-0 pb-0">
+          <fa-icon [icon]="faSearch" size="sm"></fa-icon>
+        </button>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between w-25">
+      <div>
+        <fa-icon [icon]="faShoppingBag" size="lg"></fa-icon>
+      </div>
+      <div>
+        <fa-icon class="me-3" [icon]="faPercent" size="lg"></fa-icon>
+        <span>Giảm giá</span>
+      </div>
+      <div>
+        <fa-icon class="me-3" [icon]="faUser" size="lg"></fa-icon>
+        <span class="text-orange">Danvu9673</span>
+      </div>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+
