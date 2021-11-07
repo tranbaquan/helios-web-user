@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {faSearch, faBars, faShoppingBag, faPercent, faUser} from '@fortawesome/free-solid-svg-icons';
+import {faSearch, faBars, faShoppingBag, faPercent, faUser, faTruck, faUserCheck, faMoneyCheckAlt, faUserShield} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-layout',
@@ -12,6 +12,10 @@ export class LayoutComponent implements OnInit {
   faShoppingBag = faShoppingBag;
   faPercent = faPercent;
   faUser = faUser;
+  faTruck = faTruck;
+  faUserCheck = faUserCheck;
+  faMoneyCheckAlt = faMoneyCheckAlt;
+  faUserShield = faUserShield;
 
   constructor() { }
 
