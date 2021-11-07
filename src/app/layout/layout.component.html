@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm pt-lg-3 pb-lg-3">
   <div class="container-fluid clearfix">
     <div class="d-flex align-items-end float-start">
-      <h1 class="d-block mb-0 lh-1 me-1">Helios</h1>
+      <h1 class="d-block mb-0 lh-1 me-1 text-nowrap">Helios</h1>
       <span class="text-uppercase text-nowrap">Cung Cấp Giải Pháp & Vật Liệu Xây Dựng</span>
     </div>
     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
@@ -11,11 +11,11 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="d-flex justify-content-end ms-auto">
-        <span class="nav-link text-nowrap text-orange fw-bold">Hotline: 1900 -1080</span>
-        <span class="nav-link text-nowrap text-orange fw-bold">Email: helios-order.helios.vn</span>
+      <div class="d-none d-xl-flex justify-content-end ms-auto">
+        <span class="nav-link text-nowrap text-orange fw-bold">Hotline: 1900 1080</span>
+        <span class="nav-link text-nowrap text-orange fw-bold">Email: helios-order@helios.vn</span>
       </div>
-      <ul class="navbar-nav nav mb-2 mb-lg-0">
+      <ul class="navbar-nav nav mb-2 mb-0  ms-sm-auto ms-xl-0 flex-nowrap">
         <li class="nav-item">
           <a class="nav-link active text-uppercase text-nowrap fw-bold" aria-current="page">Chăm sóc khách hàng</a>
         </li>
@@ -33,15 +33,15 @@
   </div>
 </nav>
 <nav class="navbar navbar-expand-lg bg-gray-l7 pt-0 pb-0">
-  <div class="container-fluid d-flex gap-3">
-    <div class="category-menu text-nowrap p-4 bg-orange-l1 w-25">
-      <fa-icon class="me-3 text-white" [icon]="faBars"></fa-icon>
-      <span class="text-white">Danh mục sản phẩm</span>
+  <div class="container-fluid d-flex flex-nowrap row">
+    <div class="category-menu text-nowrap p-4 bg-orange-l1 col-auto col-xl-4">
+      <fa-icon class="me-0 me-md-3 text-white" [icon]="faBars"></fa-icon>
+      <span class="text-white d-none d-md-inline-block">Danh mục sản phẩm</span>
     </div>
-    <div class="flex-grow-1 ps-3 pe-3">
+    <div class="ps-3 pe-3 col-auto col-lg-4 flex-grow-1">
       <div class="input-group border">
         <div class="dropdown border-end">
-          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          <button class="btn btn-light dropdown-toggle d-none d-md-inline" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                   aria-expanded="false">
             Danh mục
           </button>
@@ -57,13 +57,13 @@
         </button>
       </div>
     </div>
-    <div class="d-flex justify-content-between w-25">
+    <div class="d-flex gap-3 justify-content-between flex-nowrap col-auto col-xl-4">
       <div>
         <fa-icon [icon]="faShoppingBag" size="lg"></fa-icon>
       </div>
       <div>
         <fa-icon class="me-3" [icon]="faPercent" size="lg"></fa-icon>
-        <span>Giảm giá</span>
+        <span class="d-none d-xl-inline-block">Giảm giá</span>
       </div>
       <div>
         <fa-icon class="me-3" [icon]="faUser" size="lg"></fa-icon>
@@ -73,4 +73,99 @@
   </div>
 </nav>
 <router-outlet></router-outlet>
+<div>
+  <div class="d-flex flex-xxl-row flex-column justify-content-evenly gap-5 p-5 bg-gray-l7">
+    <div class="d-flex gap-2">
+      <fa-icon [icon]="faTruck" size="4x"></fa-icon>
+      <div class="d-flex flex-column gap-2">
+        <div class="text-nowrap text-uppercase fs-5">Giao hàng toàn quốc</div>
+        <div class="text-nowrap text-uppercase">Tới nội thành 63 tỉnh</div>
+      </div>
+    </div>
+    <div class="d-flex gap-2">
+      <fa-icon [icon]="faUserCheck"  size="4x"></fa-icon>
+      <div class="d-flex flex-column gap-2">
+        <div class="text-nowrap text-uppercase fs-5">Cam kết dịch vụ</div>
+        <div class="text-nowrap text-uppercase">Cam kết hàng chất lượng</div>
+      </div>
+    </div>
+    <div class="d-flex gap-2">
+      <fa-icon [icon]="faMoneyCheckAlt" size="4x"></fa-icon>
+      <div class="d-flex flex-column gap-2">
+        <div class="text-nowrap text-uppercase fs-5">Thanh toán an toàn</div>
+        <div class="text-nowrap text-uppercase">Giải pháp thanh toán an toàn</div>
+      </div>
+    </div>
+    <div class="d-flex gap-2">
+      <fa-icon [icon]="faUserShield" size="4x"></fa-icon>
+      <div class="d-flex flex-column gap-2">
+        <div class="text-nowrap text-uppercase fs-5">Bảo vệ người mua</div>
+        <div class="text-nowrap text-uppercase">Cam kết quyền lợi của người mua</div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid text-white d-flex justify-content-evenly pt-5 pb-5 bg-orange-l1">
+    <div class="d-flex flex-column gap-3">
+      <div class="text-uppercase fw-bold">Công ty Helios</div>
+      <div class="d-flex flex-column gap-1">
+        <div>Giới thiệu</div>
+        <div>Blog</div>
+        <div>Tuyển dụng</div>
+      </div>
+    </div>
+    <div class="d-flex flex-column gap-3">
+      <div class="text-uppercase fw-bold">Các chính sách</div>
+      <div class="d-flex flex-column gap-1">
+        <div>Chính sách bảo hành</div>
+        <div>Chính sách đổi trả</div>
+        <div>Chính sách khiếu nại</div>
+        <div>Chương trình khuyến mãi</div>
+        <div>Phương thức vận chuyển</div>
+        <div>Điều khoản và bảo mật</div>
+      </div>
+    </div>
+    <div class="d-flex flex-column gap-3">
+      <div class="text-uppercase fw-bold">Hợp tác và liên kết</div>
+      <div class="d-flex flex-column gap-1">
+        <div>Bán hàng doanh nghiệp</div>
+        <div>Đại lý phân phối</div>
+      </div>
+    </div>
+    <div class="d-flex flex-column gap-3">
+      <div class="text-uppercase fw-bold">Thông tin thanh toán</div>
+      <div class="d-flex flex-column gap-1">
+        <div>Thông tin ngân hàng</div>
+        <div>Cách thức thanh toán</div>
+        <div>Hướng dẫn đặt hàng</div>
+      </div>
+    </div>
+    <div class="d-flex flex-column gap-3">
+      <div class="text-uppercase fw-bold">Tài khoản</div>
+      <div class="d-flex flex-column gap-1">
+        <div>Đăng nhập</div>
+        <div>Đăng ký</div>
+        <div>Hướng dẫn thanh toán</div>
+      </div>
+    </div>
+    <div class="d-flex flex-column gap-3">
+      <div class="text-uppercase fw-bold">Theo dõi và kết nối</div>
+      <div class="d-flex flex-column gap-1">
+        <div>Facebook</div>
+        <div>Google +</div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid pt-5 pb-5 d-flex gap-5">
+    <div class="d-flex flex-column">
+      <div class="text-uppercase fw-bold">Công ty cổ phần công nghệ Helios</div>
+      <div>Email: contact@helios.vn</div>
+      <div>Điện thoại: 0123456789</div>
+      <div>Số 51, Đường số 58, Phường Thạnh Mỹ Lợi, TP.Thủ Đức, TP.Hồ Chí Minh</div>
+    </div>
+    <div class="d-flex flex-column">
+      <div class="text-uppercase fw-bold">Hotline: 1900 1234</div>
+      <div class="text-uppercase fw-bold">Email: support@helios.vn</div>
+    </div>
+  </div>
+</div>
 
