@@ -17,7 +17,7 @@ import {JwtInterceptor} from './interceptor/jwt.interceptor';
     FontAwesomeModule,
     ToastrModule.forRoot(),
   ],
-  declarations: [
+  providers: [
     {
       provide: HTTP_INTERCEPTORS,
       useClass: JwtInterceptor,
