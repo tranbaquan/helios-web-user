@@ -1,0 +1,149 @@
+@import "src/app/shared/scss/core-variables";
+.home-page{
+  margin: 20px;
+
+  .main-img {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .right-col {
+    background-color: $color-orange-l1;
+    color: $color-white-l1;
+    padding-left: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-right {
+    padding: 20px;
+    height: 100%;
+    background-color: $color-orange-l1;
+    color: $color-white-l1;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .price {
+    font-size: 70px;
+  }
+
+  .home-page-section {
+    padding: 20px ;
+    border: #EFEFEF solid 2px ;
+
+    .section-header {
+      display: inline-flex;
+      justify-content: space-between;
+
+      .section-header-icon {
+        color: $color-orange-l1;
+      }
+    }
+  }
+
+  .list-product {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 230px;
+    height: 370px;
+    border: #EFEFEF solid 1px ;
+
+    .product-card-image {
+      width: 100%;
+      height: 200px;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+
+      .price-discount {
+        padding: 15px 10px;
+        color: $color-white-l1;
+        background-color: $color-red-l3;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+
+    .product-card-body {
+      padding: 10px 20px 10px 20px;
+
+      .old-price {
+        font-size: 18px;
+        text-decoration-line: line-through;
+      }
+
+      .new-price {
+        font-size: 24px;
+        color: $color-orange-l1;
+      }
+    }
+  }
+
+  div .product-card:hover {
+    border: 2px solid $color-orange-l5;
+    transition: outline 0.6s linear;
+    transform: scale(1.05);
+    opacity: 10;
+  }
+
+  .home-page-banner {
+    background-color: #242424;
+    text-align: center;
+    color: $color-white-l1;
+    font-size: 30px;
+    display: inline-flex;
+    justify-content: center;
+    padding: 15px;
+    vertical-align: middle;
+
+    img {
+      height: 50px;
+    }
+
+    @media screen and (max-width: 325px) {
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

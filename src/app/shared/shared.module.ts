@@ -8,21 +8,23 @@ import {ToastrModule} from 'ngx-toastr';
 import {JwtInterceptor} from './interceptor/jwt.interceptor';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    HttpClientModule,
-    RouterModule,
-    ReactiveFormsModule,
-    FontAwesomeModule,
-    ToastrModule.forRoot(),
-  ],
-  providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: JwtInterceptor,
-      multi: true
-    }
+    imports: [
+        CommonModule,
+        FormsModule,
+        HttpClientModule,
+        RouterModule,
+        ReactiveFormsModule,
+        FontAwesomeModule,
+        ToastrModule.forRoot(),
+    ],
+    providers: [
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: JwtInterceptor,
+            multi: true
+        }
+    ],
+  declarations: [
   ],
   exports: [
     CommonModule,
