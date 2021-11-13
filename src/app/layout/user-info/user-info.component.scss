@@ -1,0 +1,19 @@
+@import "src/app/shared/scss/core-variables";
+
+.nav-tabs {
+  border-bottom: none;
+
+  .nav-link {
+    background: none;
+    margin-bottom: 0;
+    color: $color-black-l3;
+    &.active {
+      border: none;
+      border-bottom: 4px solid $color-orange-l1;
+    }
+  }
+}
+
+.bg-gray {
+  background-color: $color-gray-l7;
+}
