@@ -11,7 +11,7 @@ html {
 }
 
 * {
-  font-family: 'Lexend', sans-serif;
+  font-family: 'Lexend', sans-serif !important;
 }
 
 
@@ -21,5 +21,45 @@ html {
 
 
 .btn {
-  border-radius: 2px;
+  border-radius: 1px;
+
+  &:focus, :active {
+    border-radius: 1px;
+  }
+}
+
+.breadcrumb-item {
+  a {
+    text-decoration: none;
+    color: $color-black-l3;
+  }
+
+  &.active {
+    color: $color-orange-l1;
+  }
+}
+
+.card {
+  border-radius: 1px;
+}
+
+.list-group-item {
+  &.active {
+    background: none;
+    color: $color-orange-l1;
+    border-color: rgba(0, 0, 0, 0.125);
+  }
+}
+
+.dropdown-menu {
+  border: 1px solid $color-gray-l5;
+  border-radius: 1px;
+}
+
+.form-control {
+  border-radius: 1px;
+}
+
+a {
+  cursor: pointer;
 }

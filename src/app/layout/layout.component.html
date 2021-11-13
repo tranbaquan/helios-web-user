@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm pt-lg-3 pb-lg-3">
   <div class="container-fluid clearfix">
     <div class="d-flex align-items-end float-start">
-      <h1 class="d-block mb-0 lh-1 me-1 text-nowrap">Helios</h1>
+      <h1 class="d-block mb-0 lh-1 me-1 text-nowrap" routerLink="/">Helios</h1>
       <span class="text-uppercase text-nowrap">Cung Cấp Giải Pháp & Vật Liệu Xây Dựng</span>
     </div>
     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
@@ -17,35 +17,39 @@
       </div>
       <ul class="navbar-nav nav mb-2 mb-0  ms-sm-auto ms-xl-0 flex-nowrap">
         <li class="nav-item">
-          <a class="nav-link active text-uppercase text-nowrap fw-bold" aria-current="page">Chăm sóc khách hàng</a>
+          <a class="nav-link active text-uppercase text-nowrap fw-bold" aria-current="page" href="#">Chăm sóc khách
+            hàng</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-uppercase text-nowrap fw-bold">Kiểm tra đơn hàng</a>
+          <a class="nav-link text-uppercase text-nowrap fw-bold" href="#">Kiểm tra đơn hàng</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-uppercase text-nowrap fw-bold">Đăng ký</a>
+          <a class="nav-link text-uppercase text-nowrap fw-bold" href="#">Đăng ký</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-uppercase text-nowrap fw-bold">Đăng nhập</a>
+          <a class="nav-link text-uppercase text-nowrap fw-bold" href="#">Đăng nhập</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<nav class="navbar navbar-expand-lg bg-gray-l7 pt-0 pb-0">
-  <div class="container-fluid d-flex flex-nowrap row">
-    <div class="category-menu text-nowrap p-4 bg-orange-l1 col-auto col-xl-4">
-      <fa-icon class="me-0 me-md-3 text-white" [icon]="faBars"></fa-icon>
+<nav class="navbar navbar-expand bg-gray-l7 pt-0 pb-0">
+  <div class="container-fluid  pe-0 row">
+    <div class="text-nowrap p-4 bg-orange-l1 col-auto col-lg">
+      <button type="button" class="btn me-0 me-md-3">
+        <fa-icon class="text-white" [icon]="faBars"></fa-icon>
+      </button>
       <span class="text-white d-none d-md-inline-block">Danh mục sản phẩm</span>
     </div>
-    <div class="ps-3 pe-3 col-auto col-lg-4 flex-grow-1">
+    <div class="ps-3 pe-3 col-auto col-lg-7">
       <div class="input-group border">
         <div class="dropdown border-end">
-          <button class="btn btn-light dropdown-toggle d-none d-md-inline" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          <button class="btn btn-light dropdown-toggle d-none d-md-inline" type="button" id="searchToggle"
+                  data-bs-toggle="dropdown"
                   aria-expanded="false">
             Danh mục
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <ul class="dropdown-menu" aria-labelledby="searchToggle">
             <li><a class="dropdown-item" href="#">Danh mục</a></li>
             <li><a class="dropdown-item" href="#">Sản phẩm</a></li>
           </ul>
@@ -57,23 +61,43 @@
         </button>
       </div>
     </div>
-    <div class="d-flex gap-3 justify-content-between flex-nowrap col-auto col-xl-4">
+    <div class="d-flex gap-2 justify-content-between flex-nowrap col">
       <div>
-        <fa-icon [icon]="faShoppingBag" size="lg"></fa-icon>
+        <button type="button" class="btn">
+          <fa-icon class="me-0 me-md-2" [icon]="faShoppingBag" size="lg"></fa-icon>
+          <span class="d-none d-xl-inline-block">Giỏ hàng</span>
+        </button>
       </div>
       <div>
-        <fa-icon class="me-3" [icon]="faPercent" size="lg"></fa-icon>
-        <span class="d-none d-xl-inline-block">Giảm giá</span>
+        <button type="button" class="btn">
+          <fa-icon class="me-0 me-md-2" [icon]="faPercent" size="lg"></fa-icon>
+          <span class="d-none d-xl-inline-block">Giảm giá</span>
+        </button>
       </div>
       <div>
-        <fa-icon class="me-3" [icon]="faUser" size="lg"></fa-icon>
-        <span class="text-orange">Danvu9673</span>
+        <div class="dropdown">
+          <button type="button" class="btn" id="userMenu" data-bs-toggle="dropdown" aria-expanded="false">
+            <fa-icon class="me-0 me-md-2" [icon]="faUser" size="lg"></fa-icon>
+            <span class="text-orange">Danvu9673</span>
+          </button>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userMenu">
+            <li><a class="dropdown-item pt-2 pb-2" href="#">Quản lý tài khoản</a></li>
+            <li><a class="dropdown-item pt-2 pb-2" href="#">Đơn hàng của tôi</a></li>
+            <li><a class="dropdown-item pt-2 pb-2" href="#">Sản phẩm yêu thích</a></li>
+            <li><a class="dropdown-item pt-2 pb-2" href="#">Nhận xét của tôi</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item pt-2 pb-2" href="#">Đăng xuất</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </nav>
 <router-outlet></router-outlet>
-<div>
+<div class="mt-5">
   <div class="d-flex flex-xxl-row flex-column justify-content-evenly gap-5 p-5 bg-gray-l7">
     <div class="d-flex gap-2">
       <fa-icon [icon]="faTruck" size="4x"></fa-icon>
@@ -83,7 +107,7 @@
       </div>
     </div>
     <div class="d-flex gap-2">
-      <fa-icon [icon]="faUserCheck"  size="4x"></fa-icon>
+      <fa-icon [icon]="faUserCheck" size="4x"></fa-icon>
       <div class="d-flex flex-column gap-2">
         <div class="text-nowrap text-uppercase fs-5">Cam kết dịch vụ</div>
         <div class="text-nowrap text-uppercase">Cam kết hàng chất lượng</div>
@@ -163,8 +187,8 @@
       <div>Số 51, Đường số 58, Phường Thạnh Mỹ Lợi, TP.Thủ Đức, TP.Hồ Chí Minh</div>
     </div>
     <div class="d-flex flex-column">
-      <div class="text-uppercase fw-bold">Hotline: 1900 1234</div>
-      <div class="text-uppercase fw-bold">Email: support@helios.vn</div>
+      <div class="fw-bold">Hotline: 1900 1234</div>
+      <div class="fw-bold">Email: support@helios.vn</div>
     </div>
   </div>
 </div>
