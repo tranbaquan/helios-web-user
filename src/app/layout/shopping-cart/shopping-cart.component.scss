@@ -1,0 +1,53 @@
+@import "src/app/shared/scss/core-variables";
+.shopping-cart {
+  margin: 10px;
+
+  .table-header {
+    background-color: $color-gray-l7;
+  }
+
+  .cart-item {
+    border: 2px solid $color_gray-l7;
+
+    .item-header {
+      padding: 5px 10px 5px 10px;
+      border-bottom: 2px solid $color-gray-l7;
+    }
+
+    .item-body {
+      padding: 10px;
+      display: flex;
+      .item-body-content {
+        display: flex;
+
+
+        .item-margin {
+          margin-right: 10px;
+          margin-left: 10px;
+
+          img {
+            width: 120px;
+            height: 120px;
+          }
+        }
+
+      }
+
+      .vertical-center {
+        display: flex;
+        align-items: center;
+      }
+
+      .vertical-between {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .total {
+        font-size: 20px;
+        color: $color-orange-l1;
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {faSearch, faBars, faShoppingBag, faPercent, faUser, faTruck, faUserCheck, faMoneyCheckAlt, faUserShield} from '@fortawesome/free-solid-svg-icons';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-layout',
@@ -17,9 +18,20 @@ export class LayoutComponent implements OnInit {
   faMoneyCheckAlt = faMoneyCheckAlt;
   faUserShield = faUserShield;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  login(): void {
+    this.router.navigate(['login']).then();
+  }
+
+  register(): void {
+    this.router.navigate(['register']).then();
+  }
+
+  gotoCart(): void {
+    this.router.navigate(['cart']).then();
+  }
 }

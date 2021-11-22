@@ -1,0 +1,42 @@
+@import "src/app/shared/scss/core-variables";
+.register-component {
+  display: flex;
+  justify-content: center;
+
+  .register-box {
+    width: 600px;
+    border: 2px solid $color-gray-l7;
+
+    .register-box-content {
+      width: 100%;
+      padding: 20px;
+
+      .register-button {
+        color: $color-orange-l1;
+        text-decoration: none;
+      }
+
+      .register-form {
+        margin: 0 auto;
+        text-align: center;
+
+        .forgot-pass {
+          text-align: end;
+          text-decoration-line: none;
+        }
+
+        button {
+          width: 150px;
+          margin: auto;
+        }
+
+        .show-password {
+          width: 34px;
+          height: 34px;
+          border: none;
+        }
+      }
+    }
+  }
+
+}

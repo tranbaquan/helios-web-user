@@ -1,0 +1,52 @@
+<div class="register-component">
+  <div class="register-box my-5">
+    <div class="register-box-content">
+      <h4 class="fw-bold">Tạo tài khoản Helios</h4>
+      <span>Bạn đã là thành viên? <a class="register-button">đăng nhập</a> tại đây</span>
+      <div class="register-form container mt-5">
+        <div class="rowinput-group mt-3">
+          <div class="col-12">
+            <input type="text" class="form-control" placeholder="Họ tên">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm-12 col-md-6">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Mã số thuế">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 ">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Tên tài khoản">
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm-12 col-md-6">
+            <div class="input-group">
+              <input class="form-control" placeholder="Mật khẩu"
+                     [type]="showPassword ? 'text' : 'password'" >
+              <div class="input-group-addon">
+                <button class="show-password" (click)="isShowPassword()"><fa-icon [icon]="faEye"  *ngIf="!showPassword"></fa-icon>
+                  <fa-icon [icon]="faEyeSlash" *ngIf="showPassword"></fa-icon></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="input-group">
+              <input class="form-control" placeholder="Nhập lại mật khẩu"
+                     [type]="showPassword ? 'text' : 'password'" >
+              <div class="input-group-addon">
+                <button class="show-password" (click)="isShowRePassword()"><fa-icon [icon]="faEye"  *ngIf="!showRePassword"></fa-icon>
+                  <fa-icon [icon]="faEyeSlash" *ngIf="showRePassword"></fa-icon></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <button (click)="register()" class="btn btn-dark">Đăng ký</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
