@@ -1,0 +1,46 @@
+@import "src/app/shared/scss/core-variables";
+.login-component {
+  display: flex;
+  justify-content: center;
+
+  .login-box {
+    width: 600px;
+    border: 2px solid $color-gray-l7;
+
+    .login-box-content {
+      padding: 20px;
+
+      .register-button {
+        color: $color-orange-l1;
+        text-decoration: none;
+      }
+
+      .login-form {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+
+        .forgot-pass {
+          text-align: end;
+          text-decoration-line: none;
+        }
+
+        button {
+          width: 150px;
+          margin: auto;
+        }
+
+        input: forcus {
+          box-shadow: none;
+        }
+
+        .show-password {
+          width: 34px;
+          height: 34px;
+          border: none;
+        }
+      }
+    }
+  }
+
+}
