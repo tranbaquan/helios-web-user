@@ -2,7 +2,7 @@
   <div class="register-box my-5">
     <div class="register-box-content">
       <h4 class="fw-bold">Tạo tài khoản Helios</h4>
-      <span>Bạn đã là thành viên? <a class="register-button">đăng nhập</a> tại đây</span>
+      <span>Bạn đã là thành viên? <a class="register-button" (click)="gotoLogin()">đăng nhập</a> tại đây</span>
       <div class="register-form container mt-5">
         <div class="rowinput-group mt-3">
           <div class="col-12">
@@ -10,12 +10,12 @@
           </div>
         </div>
         <div class="row mt-3">
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-6 mt-2">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Mã số thuế">
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 ">
+          <div class="col-sm-12 col-md-6 mt-2">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Tên tài khoản">
             </div>
@@ -23,7 +23,7 @@
         </div>
         <div class="row mt-3">
           <div class="col-sm-12 col-md-6">
-            <div class="input-group">
+            <div class="input-group mt-2">
               <input class="form-control" placeholder="Mật khẩu"
                      [type]="showPassword ? 'text' : 'password'" >
               <div class="input-group-addon">
@@ -33,7 +33,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6">
-            <div class="input-group">
+            <div class="input-group mt-2">
               <input class="form-control" placeholder="Nhập lại mật khẩu"
                      [type]="showPassword ? 'text' : 'password'" >
               <div class="input-group-addon">

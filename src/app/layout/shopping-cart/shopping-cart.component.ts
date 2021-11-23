@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {faTrashAlt} from '@fortawesome/free-solid-svg-icons';
+import {faTrashAlt, faHeart} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -9,6 +9,7 @@ import {faTrashAlt} from '@fortawesome/free-solid-svg-icons';
 export class ShoppingCartComponent implements OnInit {
 
   faTrashAlt = faTrashAlt;
+  faHeart = faHeart;
 
   constructor() { }
 
