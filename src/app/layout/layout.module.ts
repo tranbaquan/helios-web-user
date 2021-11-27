@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { CreateOrderComponent } from './create-order/create-order.component';
+import { BlogDetailComponent } from './blogs/blog-detail/blog-detail.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    CreateOrderComponent,
+    BlogDetailComponent
   ],
   imports: [
     LayoutRoutingModule,
