@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-blogs',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blogs.component.scss']
 })
 export class BlogsComponent implements OnInit {
+  faChevronLeft = faChevronLeft;
+  faChevronRight = faChevronRight;
 
   constructor() { }
 

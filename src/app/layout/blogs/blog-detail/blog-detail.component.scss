@@ -1,5 +1,14 @@
 @import "src/app/shared/scss/core-variables";
 
+.max-line-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+
 .max-line-2 {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -32,4 +41,16 @@
 
 .bg-orange {
   background-color: $color-orange-l1;
+}
+
+textarea {
+  flex: 1;
+  //resize: none;
+  overflow: auto;
+  border: 1px solid $color-gray-l5;
+
+  &:hover, &:focus {
+    border: 1px solid $color-gray-l3;
+    outline: none;
+  }
 }
