@@ -7,6 +7,7 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {ToastrModule} from 'ngx-toastr';
 import {JwtInterceptor} from './interceptor/jwt.interceptor';
 import {IconButtonDirective} from './directive/icon-button.directive';
+import { QuantityComponent } from './component/quantity/quantity.component';
 
 @NgModule({
   imports: [
@@ -26,18 +27,17 @@ import {IconButtonDirective} from './directive/icon-button.directive';
     }
   ],
   declarations: [
-    IconButtonDirective,
-  ],
-  exports: [
-    CommonModule,
-    FormsModule,
-    HttpClientModule,
-    RouterModule,
-    ReactiveFormsModule,
-    FontAwesomeModule,
-    ToastrModule,
-    IconButtonDirective,
-  ]
+  QuantityComponent],
+    exports: [
+        CommonModule,
+        FormsModule,
+        HttpClientModule,
+        RouterModule,
+        ReactiveFormsModule,
+        FontAwesomeModule,
+        ToastrModule,
+        QuantityComponent,
+    ]
 })
 export class SharedModule {
 

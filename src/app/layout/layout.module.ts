@@ -11,6 +11,7 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { CreateOrderComponent } from './create-order/create-order.component';
 import { BlogDetailComponent } from './blogs/blog-detail/blog-detail.component';
 import { CategoryComponent } from './category/category.component';
+import { ProductDetailComponent } from './product/product-detail/product-detail.component';
 
 
 @NgModule({
@@ -24,7 +25,9 @@ import { CategoryComponent } from './category/category.component';
     ShoppingCartComponent,
     CreateOrderComponent,
     BlogDetailComponent,
-    CategoryComponent
+    CategoryComponent,
+    ShoppingCartComponent,
+    ProductDetailComponent
   ],
   imports: [
     LayoutRoutingModule,

@@ -26,4 +26,8 @@ export class LoginComponent implements OnInit {
   login(): void {
     this.router.navigate(['']).then();
   }
+
+  gotoRegister(): void {
+    this.router.navigate(['/register']).then();
+  }
 }

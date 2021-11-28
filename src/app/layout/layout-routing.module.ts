@@ -10,6 +10,7 @@ import {ShoppingCartComponent} from './shopping-cart/shopping-cart.component';
 import {CreateOrderComponent} from './create-order/create-order.component';
 import {BlogDetailComponent} from './blogs/blog-detail/blog-detail.component';
 import {CategoryComponent} from './category/category.component';
+import {ProductDetailComponent} from "./product/product-detail/product-detail.component";
 
 const routes: Routes = [
   {
@@ -60,6 +61,11 @@ const routes: Routes = [
         path: 'create-order',
         pathMatch: 'full',
         component: CreateOrderComponent
+      },
+      {
+        path: 'product/detail',
+        pathMatch: 'full',
+        component: ProductDetailComponent
       }
     ]
   }
