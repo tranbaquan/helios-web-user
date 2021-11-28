@@ -9,6 +9,7 @@ import {RegisterComponent} from './register/register.component';
 import {ShoppingCartComponent} from './shopping-cart/shopping-cart.component';
 import {CreateOrderComponent} from './create-order/create-order.component';
 import {BlogDetailComponent} from './blogs/blog-detail/blog-detail.component';
+import {CategoryComponent} from './category/category.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,11 @@ const routes: Routes = [
         path: 'blog-detail',
         pathMatch: 'full',
         component: BlogDetailComponent
+      },
+      {
+        path: 'category',
+        pathMatch: 'full',
+        component: CategoryComponent
       },
       {
         path: 'user-info',
