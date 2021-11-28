@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {
   faEye,
 } from '@fortawesome/free-solid-svg-icons';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,9 +13,13 @@ export class HomeComponent implements OnInit {
 
   faEye = faEye;
 
-  constructor() { }
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
   }
 
+  gotoProductDetail(): void {
+    window.scroll(0,0);
+    this.router.navigate(['product/detail']).then();
+  }
 }
