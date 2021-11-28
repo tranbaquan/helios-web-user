@@ -84,8 +84,7 @@
 
     <div class="cart-footer mt-3">
       <div class="cart-footer-head">
-        <div>
-          Phiếu giảm giá
+        <div><fa-icon [icon]="faMoneyBill"></fa-icon> Phiếu giảm giá
         </div>
         <div style="color: #FE9F38; margin-left: 70px">Chọn hoặc nhập mã</div>
       </div>
@@ -110,7 +109,7 @@
     </div>
 
     <div class="my-3 buy-product">
-      <button class="btn">MUA HÀNG</button>
+      <button (click)="createOrder()" class="btn">MUA HÀNG</button>
     </div>
 
   </div>
