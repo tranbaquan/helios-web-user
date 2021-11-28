@@ -6,25 +6,26 @@ import {RouterModule} from '@angular/router';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {ToastrModule} from 'ngx-toastr';
 import {JwtInterceptor} from './interceptor/jwt.interceptor';
+import {IconButtonDirective} from './directive/icon-button.directive';
 import { QuantityComponent } from './component/quantity/quantity.component';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        FormsModule,
-        HttpClientModule,
-        RouterModule,
-        ReactiveFormsModule,
-        FontAwesomeModule,
-        ToastrModule.forRoot(),
-    ],
-    providers: [
-        {
-            provide: HTTP_INTERCEPTORS,
-            useClass: JwtInterceptor,
-            multi: true
-        }
-    ],
+  imports: [
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule,
+    ReactiveFormsModule,
+    FontAwesomeModule,
+    ToastrModule.forRoot(),
+  ],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: JwtInterceptor,
+      multi: true
+    }
+  ],
   declarations: [
   QuantityComponent],
     exports: [

@@ -1,0 +1,229 @@
+<div class="container-fluid pt-3">
+  <nav aria-label="breadcrumb mb-3">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#" routerLink="/">Trang chủ</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Tạo đơn hàng</li>
+    </ol>
+  </nav>
+
+  <div class="my-3">
+    <div class="mb-3 fs-5 text-uppercase fw-bold">Tạo đơn hàng</div>
+    <div class="container p-0">
+      <div class="card">
+        <div class="card-body p-3 d-flex align-items-center gap-3">
+          <div class="py-3">
+            <fa-icon [icon]="faMapMarkerAlt" size="3x"></fa-icon>
+          </div>
+          <div>
+            <div class="fw-bold mb-3">Địa chỉ nhận hàng</div>
+            <div class="d-flex gap-5">
+              <div>
+                <div>Vũ Dân</div>
+                <div>+84123123123</div>
+              </div>
+              <div>
+                <div>272 Lê Văn sỹ</div>
+                <div>TP.HCM - Q.Tân Bình - Phường 1</div>
+              </div>
+              <div>
+                <div>Mặc định</div>
+              </div>
+              <div>
+                <button class="btn btn-outline-primary">Thay đổi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-header p-3">
+          <div class="row">
+            <div class="col-6">Sản phẩm</div>
+            <div class="col-2">Đơn giá</div>
+            <div class="col-2">Số lượng</div>
+            <div class="col-2">Số tiền</div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-body p-0">
+          <div class="border-bottom p-3">
+            Kho Hà Nội
+          </div>
+          <div class="p-3 border-bottom">
+            <div class="row">
+              <div class="col-6">
+                <div class="d-flex gap-3">
+                  <img src="" style="width: 100px; height: 100px" alt="">
+                  <div class="d-flex flex-column justify-content-between">
+                    <div>
+                      <div>Máy khoan Bosch (BOSCH) GBM 340</div>
+                      <div>100W / 2KG / 2HP</div>
+                    </div>
+                    <div>
+                      <button type="button" class="btn me-0 me-md-3">
+                        <fa-icon [icon]="faTrash"></fa-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">1.400.000Đ</div>
+              <div class="col-2">1</div>
+              <div class="col-2 fw-bold color-orange">1.400.000Đ</div>
+            </div>
+          </div>
+          <div class="alert alert-warning mb-0">
+            <div class="row">
+              <div class="col-5 border-end">
+                <div class="d-flex gap-3 p-3">
+                  <div class="text-nowrap">Lời nhắn: </div>
+                  <textarea class="w-100" placeholder="Lời nhắn cho người bán"></textarea>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="d-flex gap-3 p-3">
+                  <div class="text-nowrap">Phương thức vận chuyển: </div>
+                  <div class="w-100 d-flex flex-column">
+                    <div>
+                      <span class="me-3 text-success">Giao hàng nhanh</span>
+                      <span class="color-orange">Thay đổi</span>
+                    </div>
+                    <div>
+                      Nhận hàng vào 26/09 - 04/10
+                    </div>
+                    <div>
+                      Do ảnh hưởng của Covid-19, thời gian giao hàng có thể dài hơn dự kiến 1-5 ngày
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-3 d-flex gap-3">
+            <div class="ms-auto">Tổng thanh toán(1 sản phẩm): </div>
+            <div class="color-orange fw-bold">1.400.000Đ</div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-body p-0">
+          <div class="border-bottom p-3">
+            Kho Hà Nội
+          </div>
+          <div class="p-3 border-bottom">
+            <div class="row">
+              <div class="col-6">
+                <div class="d-flex gap-3">
+                  <img src="" style="width: 100px; height: 100px" alt="">
+                  <div class="d-flex flex-column justify-content-between">
+                    <div>
+                      <div>Máy khoan Bosch (BOSCH) GBM 340</div>
+                      <div>100W / 2KG / 2HP</div>
+                    </div>
+                    <div>
+                      <button type="button" class="btn me-0 me-md-3">
+                        <fa-icon [icon]="faTrash"></fa-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">1.400.000Đ</div>
+              <div class="col-2">1</div>
+              <div class="col-2 fw-bold color-orange">1.400.000Đ</div>
+            </div>
+          </div>
+          <div class="alert alert-warning mb-0">
+            <div class="row">
+              <div class="col-5 border-end">
+                <div class="d-flex gap-3 p-3">
+                  <div class="text-nowrap">Lời nhắn: </div>
+                  <textarea class="w-100" placeholder="Lời nhắn cho người bán"></textarea>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="d-flex gap-3 p-3">
+                  <div class="text-nowrap">Phương thức vận chuyển: </div>
+                  <div class="w-100 d-flex flex-column">
+                    <div>
+                      <span class="me-3 text-success">Giao hàng nhanh</span>
+                      <span class="color-orange">Thay đổi</span>
+                    </div>
+                    <div>
+                      Nhận hàng vào 26/09 - 04/10
+                    </div>
+                    <div>
+                      Do ảnh hưởng của Covid-19, thời gian giao hàng có thể dài hơn dự kiến 1-5 ngày
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-3 d-flex gap-3">
+            <div class="ms-auto">Tổng thanh toán(1 sản phẩm): </div>
+            <div class="color-orange fw-bold">1.400.000Đ</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-body p-3">
+          <div class="row">
+            <div class="col-7">
+              <div class="d-flex gap-3">
+                <span class="fw-bold">Phương thức thanh toán</span>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Thẻ tín dụng
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Thanh toán khi nhận hàng
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="d-flex">
+                <div class="d-flex gap-3">
+                  <fa-icon [icon]="faMoneyBill"></fa-icon>
+                  <span>Phiếu giảm giá</span>
+                </div>
+                <div class="ms-auto fw-bolder color-orange">Chọn hoặc nhập mã</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-3 p-3 border-bottom">
+        <div class="row">
+          <div class="col-7"></div>
+          <div class="col-5">
+            <div class="d-flex">
+              <div>Tổng tiền hàng</div>
+              <div class="ms-auto">2.800.000Đ</div>
+            </div>
+            <div class="d-flex mt-3">
+              <div>Phí vận chuyển</div>
+              <div class="ms-auto">0Đ</div>
+            </div>
+            <div class="d-flex mt-3">
+              <div>Tổng thanh toán</div>
+              <div class="ms-auto">2.800.000Đ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-3 d-flex">
+        <button class="btn btn-outline-dark ms-auto text-uppercase py-3 px-5 fw-bolder">Tạo đơn hàng</button>
+      </div>
+    </div>
+  </div>
+</div>
