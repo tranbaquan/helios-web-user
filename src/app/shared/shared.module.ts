@@ -6,6 +6,7 @@ import {RouterModule} from '@angular/router';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {ToastrModule} from 'ngx-toastr';
 import {JwtInterceptor} from './interceptor/jwt.interceptor';
+import { QuantityComponent } from './component/quantity/quantity.component';
 
 @NgModule({
     imports: [
@@ -25,16 +26,17 @@ import {JwtInterceptor} from './interceptor/jwt.interceptor';
         }
     ],
   declarations: [
-  ],
-  exports: [
-    CommonModule,
-    FormsModule,
-    HttpClientModule,
-    RouterModule,
-    ReactiveFormsModule,
-    FontAwesomeModule,
-    ToastrModule,
-  ]
+  QuantityComponent],
+    exports: [
+        CommonModule,
+        FormsModule,
+        HttpClientModule,
+        RouterModule,
+        ReactiveFormsModule,
+        FontAwesomeModule,
+        ToastrModule,
+        QuantityComponent,
+    ]
 })
 export class SharedModule {
 

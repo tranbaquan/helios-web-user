@@ -1,0 +1,44 @@
+@import "src/app/shared/scss/core-variables";
+.cart-quantity {
+
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid $color-gray-l5;
+
+  .icon {
+    font-size: 24px;
+    color: $color-orange-l1;
+    cursor: pointer;
+  }
+
+  input{
+    width: 35px;
+    border: none;
+  }
+
+  input:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  .icon-minus{
+    margin-right: 20px;
+  }
+
+  .icon-plus{
+    margin-left: 10px;
+  }
+}

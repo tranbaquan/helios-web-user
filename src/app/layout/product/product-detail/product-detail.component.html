@@ -1,0 +1,200 @@
+<div class="product-detail">
+  <div class="row">
+    <div class="colsm-12 col-md-3">
+      <div class="main-img">
+        <img src="assets/img/maykhoan.JPG">
+      </div>
+      <div class="mt-3 sub-img">
+        <img class="cursor-pointer" src="assets/img/maykhoan.JPG">
+        <img class="cursor-pointer" src="assets/img/maykhoan.JPG">
+        <img class="cursor-pointer" src="assets/img/maykhoan.JPG">
+      </div>
+    </div>
+    <div class="colsm-12 col-md-6">
+      <div class="product-title">
+        <span>Thương hiệu: <span class="orange-label">Bosch</span></span>
+        <h3>Máy khoan Bosch (BOSCH) GBM 340</h3>
+        <div class="product-status">
+          <span class="orange-label"><fa-icon [icon]="faStar"></fa-icon> 4.5</span>
+          <span class="ms-2"> (12 Đánh giá)</span>
+          <label class="status ms-3">Còn hàng</label>
+        </div>
+      </div>
+      <hr>
+      <div class="product-option">
+        <div>
+          <span class="new-price fw-bold">1.400.000 Đ</span> <span class="old-price ms-3">1.900.000 Đ</span>
+          <span class="orange-label ms-3">-20%</span>
+        </div>
+        <div class="mt-3">
+          <h6>Chọn đầu vào nguồn</h6>
+          <div class="option">
+            <button>100W</button>
+            <button class="selected">200W</button>
+            <button>400W</button>
+          </div>
+        </div>
+        <div class="mt-3">
+          <h6>Trọng lượng (kg)</h6>
+          <div class="option">
+            <button class="selected">0.5 kg</button>
+            <button>2 kg</button>
+            <button>2.5 kg</button>
+          </div>
+        </div>
+        <div class="mt-3">
+          <h6>Công suất</h6>
+          <div class="option">
+            <button>1HP</button>
+            <button>2HP</button>
+            <button class="selected">2.5HP</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="buy-product">
+        <div>
+          <app-quantity></app-quantity>
+        </div>
+        <div class="mt-3">
+          <button class="me-4 buy">MUA NGAY</button>
+          <button class="add"><fa-icon [icon]="faShoppingBag"></fa-icon> THÊM VÀO GIỎ HÀNG</button>
+        </div>
+      </div>
+      <div class="product-info mt-3">
+        <div class="product-info-header">
+          <div class="button-nav cursor-pointer" [class]="activeInfo === 1 ? 'active-nav' : ''" (click)="activeInfo = 1">
+            <span>CÁC TÍNH NĂNG CHÍNH</span>
+          </div>
+          <div class="button-nav cursor-pointer" [class]="activeInfo === 2 ? 'active-nav' : ''" (click)="activeInfo = 2">
+            <span>THÔNG SỐ KỸ THUẬT</span>
+          </div>
+          <div class="button-nav cursor-pointer" [class]="activeInfo === 3 ? 'active-nav' : ''" (click)="activeInfo = 3">
+            <span>THÔNG TIN SẢN PHẨM</span>
+          </div>
+        </div>
+        <div class="mt-2">
+          <ul>
+            <li>In publishing and graphic design, lorem ipsum is a placeholder text commonly </li>
+            <li>In publishing and graphic design, lorem ipsum is a placeholder text commonly </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <div class="colsm-12 col-md-3">
+      <div class="ad1">
+        <p>Bạn muốn mua số lượng nhiều hơn nữa?</p>
+        <button>NHẬN BÁO GIÁ SỐ LƯỢNG LỚN</button>
+      </div>
+      <div class="ad2 mt-3">
+        <p style="font-size: 30px">Giảm <span style="font-size: 90px">50%</span></p>
+        <p>The placeholder text, beginning with the line "Loremipsum dolor sit amet, consectetur adipiscing elit", looks like latin because in its younth, centuries ago, ...</p>
+      </div>
+    </div>
+
+    <div class="my-2">
+      <div class="home-page-section">
+        <div class="col-12 section-header">
+          <div>
+            <h5 class="fw-bold">SẢN PHẨM CÙNG LOẠI</h5>
+          </div>
+        </div>
+        <div class="col-12 mt-3 list-product">
+          <div class="product-card">
+            <div class="product-card-image cursor-pointer">
+              <img src="../../../assets/img/product.png">
+              <div class="price-discount">
+                <span>-10%</span>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <h6 class="cursor-pointer">Máy khoan bê tông</h6>
+              <span class="old-price">1,900,000 Đ</span><br>
+              <span class="new-price">1,400,000 Đ</span><br>
+              <span>Bosch</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-image cursor-pointer">
+              <img src="../../../assets/img/product.png">
+              <div class="price-discount">
+                <span>-10%</span>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <h6 class="cursor-pointer">Máy khoan bê tông</h6>
+              <span class="old-price">1,900,000 Đ</span><br>
+              <span class="new-price">1,400,000 Đ</span><br>
+              <span>Bosch</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-image cursor-pointer">
+              <img src="../../../assets/img/product.png">
+              <div class="price-discount">
+                <span>-10%</span>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <h6 class="cursor-pointer">Máy khoan bê tông</h6>
+              <span class="old-price">1,900,000 Đ</span><br>
+              <span class="new-price">1,400,000 Đ</span><br>
+              <span>Bosch</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-image cursor-pointer">
+              <img src="../../../assets/img/product.png">
+              <div class="price-discount">
+                <span>-10%</span>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <h6 class="cursor-pointer">Máy khoan bê tông</h6>
+              <span class="old-price">1,900,000 Đ</span><br>
+              <span class="new-price">1,400,000 Đ</span><br>
+              <span>Bosch</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-image cursor-pointer">
+              <img src="../../../assets/img/product.png">
+              <div class="price-discount">
+                <span>-10%</span>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <h6 class="cursor-pointer">Máy khoan bê tông</h6>
+              <span class="old-price">1,900,000 Đ</span><br>
+              <span class="new-price">1,400,000 Đ</span><br>
+              <span>Bosch</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-2">
+      <div class="home-page-section">
+        <div class="col-12">
+          <h5 class="fw-bold">ĐÁNH GIÁ SẢN PHẨM</h5>
+          <span>Khách hàng đánh giá máy khoan quay 10mm 300W Tiger Electric, TGP 010</span>
+        </div>
+        <div class="col-12 mt-2">
+          
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+</div>
