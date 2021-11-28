@@ -10,6 +10,10 @@
     color: $color-orange-l1;
   }
 
+  .green-label {
+    color: #15c407;
+  }
+
   .main-img {
     img {
       width: 100%;
@@ -132,17 +136,29 @@
     color: $color-white-l1;
   }
 
+  .section-header-grey {
+    padding: 20px;
+    background-color: $color-gray-l7;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .home-page-section {
     padding: 20px ;
-    border: #EFEFEF solid 2px ;
+    border: #EFEFEF solid 1px ;
 
     .section-header {
       display: inline-flex;
       justify-content: space-between;
 
       .section-header-icon {
+
         color: $color-orange-l1;
       }
+    }
+
+    .background-grey {
+      background-color: $color-gray-l5;
     }
   }
 
@@ -200,5 +216,49 @@
     transition: outline 0.6s linear;
     transform: scale(1.05);
     opacity: 10;
+  }
+
+  .comment-section {
+    padding: 10px;
+    border-bottom: 1px solid $color-gray-l7;
+    border-left: 1px solid $color-gray-l7;
+    border-right: 1px solid $color-gray-l7;
+
+    .comment-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    button {
+      padding: 10px 30px 10px 30px;
+      background-color: $color-black-l4;
+      color: $color-white-l1;
+      border: none;
+    }
+  }
+
+  .show-more {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .question {
+    border-left: 1px solid $color-gray-l7;
+    border-right: 1px solid $color-gray-l7;
+    padding: 10px 20px 10px 20px;
+
+    input {
+      max-width: 50%!important;
+    }
+
+    button {
+      height: 40px;
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: $color-orange-l1;
+      color: $color-white-l1;
+      border: none;
+    }
   }
 }

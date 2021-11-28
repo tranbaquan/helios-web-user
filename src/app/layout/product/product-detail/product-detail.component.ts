@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {faStar, faShoppingBag} from '@fortawesome/free-solid-svg-icons';
+import {faStar, faShoppingBag, faThumbsUp, faThumbsDown} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-product-detail',
@@ -10,6 +10,8 @@ export class ProductDetailComponent implements OnInit {
 
   faStar = faStar;
   faShoppingBag = faShoppingBag;
+  faThumbsUp = faThumbsUp;
+  faThumbsDown = faThumbsDown;
 
   activeInfo = 1;
 
