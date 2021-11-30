@@ -7,7 +7,12 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {ToastrModule} from 'ngx-toastr';
 import {JwtInterceptor} from './interceptor/jwt.interceptor';
 import {IconButtonDirective} from './directive/icon-button.directive';
-import { QuantityComponent } from './component/quantity/quantity.component';
+import {QuantityComponent} from './component/quantity/quantity.component';
+import {ModalComponent} from './component/modal/modal.component';
+import {ModalHeaderComponent} from './component/modal/modal-header/modal-header.component';
+import {ModalBodyComponent} from './component/modal/modal-body/modal-body.component';
+import {PaginationComponent} from './component/pagination/pagination.component';
+import {ModalFooterComponent} from './component/modal/modal-footer/modal-footer.component';
 
 @NgModule({
   imports: [
@@ -27,17 +32,31 @@ import { QuantityComponent } from './component/quantity/quantity.component';
     }
   ],
   declarations: [
-  QuantityComponent],
-    exports: [
-        CommonModule,
-        FormsModule,
-        HttpClientModule,
-        RouterModule,
-        ReactiveFormsModule,
-        FontAwesomeModule,
-        ToastrModule,
-        QuantityComponent,
-    ]
+    QuantityComponent,
+    IconButtonDirective,
+    QuantityComponent,
+    ModalComponent,
+    ModalHeaderComponent,
+    ModalBodyComponent,
+    ModalFooterComponent,
+    PaginationComponent,
+  ],
+  exports: [
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule,
+    ReactiveFormsModule,
+    FontAwesomeModule,
+    ToastrModule,
+    IconButtonDirective,
+    QuantityComponent,
+    ModalComponent,
+    ModalHeaderComponent,
+    ModalBodyComponent,
+    ModalFooterComponent,
+    PaginationComponent,
+  ]
 })
 export class SharedModule {
 
